@@ -1,0 +1,159 @@
+.indexContainer{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 200px auto;
+    grid-template-areas:
+    "sidebar header header"
+    "sidebar main main"
+    "sidebar footer footer";
+    background-color: rgb(226, 219, 231);
+    border: 5px solid rgb(64, 51, 66);
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+.header{ 
+    grid-area: header;
+    padding: 10px;
+    margin: 2px;
+    border: 2px solid rgb(64, 51, 66);
+    background-color: rgb(226, 219, 231);
+    position: sticky;
+    top: 0;
+}
+.sidebar{
+    grid-area: sidebar;
+    padding: 10px;
+    margin: 2px;
+    border: 2px solid rgb(64, 51, 66);
+    position: sticky;
+    top: 0;
+    align-self: start;
+}
+.main{
+    grid-area: main;
+    padding: 10px;
+    margin: 2px;
+    border: 2px solid rgb(64, 51, 66);
+}
+.footer{
+    grid-area: footer;
+    padding: 10px;
+    margin: 2px;
+    border: 2px solid rgb(64, 51, 66);
+}
+
+
+.skillsContainer{
+    padding-bottom: 60px;
+    display: flex;
+}
+.skillBox{
+    flex-grow: 1;
+    margin: 2px;
+    border: 1.5px solid black;
+    background-color: rgb(192, 203, 212);
+    box-shadow: 5px 5px 10px rgba(36, 36, 36, 0.5);
+    font-size: 15px;
+    font-style: italic;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+}
+.skillBox:hover{
+    flex-grow: 8;
+    background-color: rgb(228, 238, 246);
+    transition: 0.5s;
+}
+
+
+.eduContainer{
+    display: flex;
+    padding-bottom: 60px;
+    margin: 10px;
+}
+.eduBox{
+    margin: 4px;
+    background-color: rgb(190, 239, 223);
+    border-radius: 8px;
+    font-size: 20px;
+    color: black;
+    box-shadow: 5px 5px 10px rgba(36, 36, 36, 0.5);
+}
+.eduImg{
+    float: right;
+    padding: 8px;
+}
+
+
+.prjContainer{
+    padding-bottom: 60px;
+    display: grid;
+    grid-template-areas:
+    "prjTitle prjBox prjImg"
+    "prjTitle prjBox prjImg"
+}
+.prjTitle{
+    border: 2px solid black;
+    font-size: 30px;
+    color: black;
+    font-style: italic;
+    text-align: center;
+}
+.prjBox{
+    border: 2px solid black;
+    font-size: 15px;
+    color: black;
+    text-align: left;
+}
+.prjImg{
+    border: 2px solid black;
+    padding: 2px;
+    font-size: 12px;
+    font-style: italics;
+    color: black;
+}   
+
+.dlButton{
+    font-size: 30px;
+    width: 150px;
+    height: 80px;
+    background-color: rgb(139, 180, 188);
+}
+.dlButton:hover{
+    width: 180px;
+    height: 110px;
+    border-radius: 15px;
+    box-shadow: 20px 20px 40px rgba(36, 36, 36, 0.5);
+    transition: 0.5s;
+}
+
+.sideButton{
+    width: 130px;
+    height: 60px;  
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(191, 228, 202);
+    font-size: 20px;
+}
+.sideButton:hover{
+    width: 160px;
+    height: 90px;
+    font-style: italic;
+    transition: 0.5s;
+}
+
+p{
+    font-size: 20px;
+    color: black;
+    text-align: left;
+}
+h2{
+    font-size: 40px;
+    color: black;
+}
+h3{
+    font-size: 30px;
+    color: black;
+}
